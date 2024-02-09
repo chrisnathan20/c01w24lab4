@@ -55,6 +55,8 @@ app.post("/postNote", express.json(), async (req, res) => {
     try {
       // Basic body request check
       const { title, content } = req.body;
+      const createdAt = new Date();
+
       if (!title || !content) {
         return res
           .status(400)
@@ -66,12 +68,12 @@ app.post("/postNote", express.json(), async (req, res) => {
       const result = await collection.insertOne({
         title,
         content,
+        createdAt
       });
       res.json({
         response: "Note added succesfully.",
         insertedId: result.insertedId,
       });
-
 
     } catch (error) {
       res.status(500).json({ error: error.message });
