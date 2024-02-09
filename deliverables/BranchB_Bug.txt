@@ -1,0 +1,8 @@
+Frontend:
+1. The deleteNote function was setting the Content-Type header for a DELETE request, which is unnecessary as the request does not include a body.
+2. The application state was not updated after a successful delete operation (did not call deleteNoteState)
+
+Backend:
+1. The endpoint did not interact with the database to attempt note deletion and always returned a 500 Internal Server Error (unimplemented functionality)
+2. The endpoint did not assign note ID correctly, and did not validate the note ID
+3. The endpoint lacked proper error handling and meaningful response messages based on the actual result of the delete operation
