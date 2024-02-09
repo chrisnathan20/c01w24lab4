@@ -14,6 +14,7 @@ Person 3: Christopher
 - in charge of branch C
 - added code for note search feature
 - rebased branch D into branch C
+- created Git Workflow Diagram
 
 Person 4: Jamie
 - in charge of branch D
@@ -21,12 +22,12 @@ Person 4: Jamie
 - helped Christopher rebase branch D onto D
 
 Person 5: Sumaiya
-- created pull request mergrin branch A into devel
+- created pull request merging branch A into devel
 
 Person 6: Frans
-- created pull request mergrin branch C into devel
+- created pull request merging branch C into devel
 
 Person 7: Ashvini
 - created pull_request_template.md file
 - created and filled out tasks.md file
-- created pull request merging 'devel' into 'main'
+- created pull request merging devel into main
